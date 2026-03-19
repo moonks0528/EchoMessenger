@@ -28,20 +28,79 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnSend1 = new System.Windows.Forms.Button();
+            this.lblMessenger = new System.Windows.Forms.Label();
+            this.txtMessage = new System.Windows.Forms.TextBox();
+            this.lstMyMessage = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
+            // 
+            // btnSend1
+            // 
+            this.btnSend1.BackColor = System.Drawing.Color.Yellow;
+            this.btnSend1.Font = new System.Drawing.Font("굴림", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.btnSend1.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.btnSend1.Location = new System.Drawing.Point(721, 576);
+            this.btnSend1.Name = "btnSend1";
+            this.btnSend1.Size = new System.Drawing.Size(215, 76);
+            this.btnSend1.TabIndex = 0;
+            this.btnSend1.Text = "전송";
+            this.btnSend1.UseVisualStyleBackColor = false;
+            this.btnSend1.Click += new System.EventHandler(this.btnSend1_Click);
+            // 
+            // lblMessenger
+            // 
+            this.lblMessenger.AutoSize = true;
+            this.lblMessenger.Font = new System.Drawing.Font("굴림", 28.125F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblMessenger.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.lblMessenger.Location = new System.Drawing.Point(77, 25);
+            this.lblMessenger.Name = "lblMessenger";
+            this.lblMessenger.Size = new System.Drawing.Size(623, 75);
+            this.lblMessenger.TabIndex = 1;
+            this.lblMessenger.Text = "Echo Messenger";
+            this.lblMessenger.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // txtMessage
+            // 
+            this.txtMessage.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtMessage.Location = new System.Drawing.Point(76, 593);
+            this.txtMessage.Name = "txtMessage";
+            this.txtMessage.Size = new System.Drawing.Size(626, 44);
+            this.txtMessage.TabIndex = 2;
+            this.txtMessage.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // lstMyMessage
+            // 
+            this.lstMyMessage.Font = new System.Drawing.Font("굴림", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lstMyMessage.FormattingEnabled = true;
+            this.lstMyMessage.ItemHeight = 37;
+            this.lstMyMessage.Location = new System.Drawing.Point(76, 127);
+            this.lstMyMessage.Name = "lstMyMessage";
+            this.lstMyMessage.Size = new System.Drawing.Size(860, 411);
+            this.lstMyMessage.TabIndex = 3;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1541, 960);
+            this.ClientSize = new System.Drawing.Size(1039, 682);
+            this.Controls.Add(this.lstMyMessage);
+            this.Controls.Add(this.txtMessage);
+            this.Controls.Add(this.lblMessenger);
+            this.Controls.Add(this.btnSend1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button btnSend1;
+        private System.Windows.Forms.Label lblMessenger;
+        private System.Windows.Forms.TextBox txtMessage;
+        private System.Windows.Forms.ListBox lstMyMessage;
     }
 }
 

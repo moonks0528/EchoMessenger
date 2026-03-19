@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace EchoMessenger
 {
@@ -15,6 +16,29 @@ namespace EchoMessenger
         public Form1()
         {
             InitializeComponent();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSend1_Click(object sender, EventArgs e)
+        {
+            string typed_msg;
+            typed_msg = txtMessage.Text;
+            lstMyMessage.Items.Add(typed_msg);
+
         }
     }
 }
