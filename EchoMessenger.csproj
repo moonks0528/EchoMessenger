@@ -87,6 +87,7 @@
     <Content Include="img\ScreenShot1.png" />
     <Content Include="img\ScreenShot2.png" />
     <Content Include="img\ScreenShot3.png" />
+    <Content Include="img\ScreenShot4.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

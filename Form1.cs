@@ -37,19 +37,27 @@ namespace EchoMessenger
         {
             string typed_msg = txtMessage.Text;
 
+            // 공백 제거
+            typed_msg = typed_msg.Trim();
+
             // 공백 입력 방지
             if (string.IsNullOrWhiteSpace(typed_msg))
             {
                 return;
             }
 
+            // 현재 시간 추가
+            string time = DateTime.Now.ToString("HH:mm:ss");
+            string result = $"[{time}] {typed_msg}";
+
             // ListBox에 추가
-            lstMyMessage.Items.Add(typed_msg);
+            lstMyMessage.Items.Add(result);
 
-            // 입력창 비우기
+            // 메시지 개수 표시
+            lblCount.Text = $"현재 대화: {lstMyMessage.Items.Count}개";
+
+            // 입력창 초기화 + 포커스
             txtMessage.Clear();
-
-            // 입력창으로 포커스 이동
             txtMessage.Focus();
         }
 

@@ -32,6 +32,7 @@
             this.lblMessenger = new System.Windows.Forms.Label();
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.lstMyMessage = new System.Windows.Forms.ListBox();
+            this.lblCount = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnSend1
@@ -79,11 +80,22 @@
             this.lstMyMessage.Size = new System.Drawing.Size(860, 411);
             this.lstMyMessage.TabIndex = 3;
             // 
+            // lblCount
+            // 
+            this.lblCount.AutoSize = true;
+            this.lblCount.Font = new System.Drawing.Font("굴림", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.lblCount.Location = new System.Drawing.Point(745, 71);
+            this.lblCount.Name = "lblCount";
+            this.lblCount.Size = new System.Drawing.Size(149, 29);
+            this.lblCount.TabIndex = 4;
+            this.lblCount.Text = "현재 대화:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1039, 682);
+            this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lstMyMessage);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.lblMessenger);
@@ -102,6 +114,7 @@
         private System.Windows.Forms.Label lblMessenger;
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.ListBox lstMyMessage;
+        private System.Windows.Forms.Label lblCount;
     }
 }
 
