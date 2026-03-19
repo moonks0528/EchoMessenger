@@ -33,6 +33,8 @@
             this.txtMessage = new System.Windows.Forms.TextBox();
             this.lstMyMessage = new System.Windows.Forms.ListBox();
             this.lblCount = new System.Windows.Forms.Label();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnSend1
@@ -90,11 +92,33 @@
             this.lblCount.TabIndex = 4;
             this.lblCount.Text = "현재 대화:";
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(955, 522);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(177, 53);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "선택항목삭제";
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(955, 582);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(177, 55);
+            this.btnClear.TabIndex = 6;
+            this.btnClear.Text = "초기화";
+            this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1039, 682);
+            this.ClientSize = new System.Drawing.Size(1168, 682);
+            this.Controls.Add(this.btnClear);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.lstMyMessage);
             this.Controls.Add(this.txtMessage);
@@ -115,6 +139,8 @@
         private System.Windows.Forms.TextBox txtMessage;
         private System.Windows.Forms.ListBox lstMyMessage;
         private System.Windows.Forms.Label lblCount;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnClear;
     }
 }
 
