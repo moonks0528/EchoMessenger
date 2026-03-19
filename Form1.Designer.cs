@@ -67,6 +67,7 @@
             this.txtMessage.Size = new System.Drawing.Size(626, 44);
             this.txtMessage.TabIndex = 2;
             this.txtMessage.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            this.txtMessage.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtMessage_KeyDown);
             // 
             // lstMyMessage
             // 
