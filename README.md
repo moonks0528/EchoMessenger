@@ -38,6 +38,7 @@
 
 
 ##실행 화면 (과제1)
+
 -![과제1 실행화면](img/ScreenShot1.png)
 과제 내용
 
@@ -58,6 +59,7 @@
 
 
 ##실행 화면 (과제2)
+
 -![과제2 실행화면](img/ScreenShot2.png)
 -![과제2 실행화면](img/ScreenShot3.png)
  
@@ -75,6 +77,7 @@
 
 
 ##실행 화면 (과제3)
+
 -![과제3 실행화면](img/ScreenShot4.png)
 
 ## 과제 내용
@@ -90,6 +93,7 @@
 
 
 ##실행 화면 (과제4)
+
 -![과제4 실행화면](img/ScreenShot5.png)
 기존화면
 -![과제4 실행화면](img/ScreenShot6.png)
